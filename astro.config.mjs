@@ -22,15 +22,15 @@ export default defineConfig({
       noExternal: ['swiper', 'leaflet']
     }
   },
-  site: 'https://hellotham.github.io',
-  base: '/hello-astro/',
+  site: 'https://marciadepaiva.com.br',
+  base: '/',
   integrations: [icon(), tailwind(), sitemap(), mdx(), alpinejs(), robotsTxt(), markdoc()],
   markdown: {
     extendDefaultPlugins: true,
     remarkPlugins: [remarkReadingTime, remarkMath, remarkPlantUML, remarkDiagram, remarkEmoji],
     rehypePlugins: [rehypeKatex],
     shikiConfig: {
-      theme: 'github-light',
+      theme: 'github-dark',
       langs: [],
       // Enable word wrap to prevent horizontal scrolling
       wrap: true

@@ -10,7 +10,7 @@ export interface TagType {
 
 export const SiteMetadata = {
   title: 'Márcia de Paiva',
-  description: '',
+  description: 'Maximize Seu Capital: Encontre as Melhores Estratégias Financeiras',
   author: {
     name: 'Chris Tham',
     twitter: '@chris1tham',
