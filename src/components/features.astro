@@ -1,30 +1,32 @@
 ---
 import { Icon } from 'astro-icon/components'
 
-const features = [
+// Dados dos recursos oferecidos
+const financialServices = [
   {
-    name: 'Easy to Create Content',
-    description:
-      'Create pages, documentation pages and blog posts using MDX, Markdoc and Markdown. Includes support for photo galleries, maps, math equations (KaTeX) and diagrams (mermaid, plantuml and markmap).',
-    icon: 'sparkles'
+    name: 'Crédito com Garantia',
+    description: 'Alavanque seu negócio utilizando ativos imobiliários como garantia, proporcionando segurança e confiança nas operações financeiras.',
+    icon: 'home'
   },
   {
-    name: 'Customisable Design',
-    description:
-      'Built using the TailwindCSS ecosystem (including HeroIcons and Hero Patterns). Very easy to customise and change design. Template illustrations by unDraw.',
-    icon: 'puzzle'
+    name: 'Antecipação de Recebíveis',
+    description: 'Mantenha seu fluxo de caixa robusto e saudável através da antecipação de recebíveis, permitindo uma gestão financeira eficaz.',
+    icon: 'currency-dollar'
   },
   {
-    name: 'SEO Ready',
-    description:
-      'Full support for Facebook (Open Graph), Twitter Cards, Schema/JSON-LD metadata. Automatically generated robots.txt, RSS feed and sitemap.',
+    name: 'Crédito Rural',
+    description: 'Atenda às necessidades específicas do setor agrícola com soluções de financiamento adaptadas, promovendo o crescimento e a sustentabilidade.',
     icon: 'presentation-chart-bar'
   },
   {
-    name: 'Blazing Performance',
-    description:
-      'Achieve great web vitals scores. Static site using Jamstack architecture. Built using Astro and Typescript for ultimate performance and type safety.',
-    icon: 'clock'
+    name: 'Investimentos Estratégicos',
+    description: 'Amplifique seu potencial com CRI, CRA e Debêntures, explorando novas oportunidades de crescimento empresarial.',
+    icon: 'chart-bar'
+  },
+  {
+    name: 'Linhas de Crédito',
+    description: 'Acesse linhas de crédito especializadas como FINEM, FINAME, PRONAMP e BNDES, otimizando os investimentos e o desenvolvimento do seu negócio.',
+    icon: 'cash'
   }
 ]
 ---
@@ -35,38 +37,37 @@ const features = [
       <h2
         class='text-base font-semibold uppercase tracking-wide text-blue-800 dark:text-blue-300'
       >
-        Features
+        Recursos
       </h2>
       <p
         class='mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl'
       >
-        Comprehensive Astro Starter
+        Maximize Seu Capital
       </p>
       <p class='mt-4 max-w-2xl text-xl text-gray-600 dark:text-gray-300 lg:mx-auto'>
-        This is a good starting point for a multi-purpose website, including support for
-        documentation and blog pages, photo galleries, diagrams, math equations and more.
+        Conectamos visionários com recursos financeiros certos, impulsionando de forma estratégica seus empreendimentos pessoais e corporativos.
       </p>
     </div>
 
     <div class='mt-10'>
       <dl class='space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0'>
         {
-          features.map((feature) => (
+          financialServices.map((service) => (
             <div class='relative'>
               <dt>
                 <div class='absolute flex h-12 w-12 items-center justify-center rounded-md bg-blue-500 text-white dark:bg-blue-400 dark:text-black'>
                   <Icon
                     class='h-6 w-6'
                     aria-hidden='true'
-                    name={'heroicons-outline:' + feature.icon}
+                    name={'heroicons-outline:' + service.icon}
                   />
                 </div>
                 <p class='ml-16 text-lg font-medium leading-6 text-gray-900 dark:text-gray-200'>
-                  {feature.name}
+                  {service.name}
                 </p>
               </dt>
               <dd class='ml-16 mt-2 text-base text-gray-600 dark:text-gray-400'>
-                {feature.description}
+                {service.description}
               </dd>
             </div>
           ))
