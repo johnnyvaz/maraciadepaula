@@ -23,19 +23,19 @@ const otherPosts = posts.slice(1, 5)
         </h2>
         <a
           href={import.meta.env.BASE_URL + 'blog'}
-          class='ml-4 mt-2 inline-block rounded-md bg-blue-600 px-2 py-2 text-base font-bold text-white hover:bg-pink-600 dark:bg-blue-300 dark:text-black dark:hover:bg-pink-300 md:px-6 md:py-3 md:text-lg'
+          class='ml-4 mt-2 inline-block rounded-md bg-blue-600 px-2 py-2 text-base font-bold text-white hover:bg-orange-600 dark:bg-blue-300 dark:text-black dark:hover:bg-orange-300 md:px-6 md:py-3 md:text-lg'
         >
           All Articles
         </a>
         <a
           href={import.meta.env.BASE_URL + 'categories'}
-          class='ml-4 mt-2 inline-block rounded-md bg-blue-100 px-2 py-2 text-base font-bold text-blue-800 hover:bg-pink-200 dark:bg-blue-900 dark:text-blue-100 dark:hover:bg-pink-900 md:px-6 md:py-3 md:text-lg'
+          class='ml-4 mt-2 inline-block rounded-md bg-blue-100 px-2 py-2 text-base font-bold text-blue-800 hover:bg-orange-200 dark:bg-blue-900 dark:text-blue-100 dark:hover:bg-orange-900 md:px-6 md:py-3 md:text-lg'
         >
           Categories
         </a>
         <a
           href={import.meta.env.BASE_URL + 'tags'}
-          class='ml-4 mt-2 inline-block rounded-md bg-blue-100 px-2 py-2 text-base font-bold text-blue-800 hover:bg-pink-200 dark:bg-blue-900 dark:text-blue-100 dark:hover:bg-pink-900 md:px-6 md:py-3 md:text-lg'
+          class='ml-4 mt-2 inline-block rounded-md bg-blue-100 px-2 py-2 text-base font-bold text-blue-800 hover:bg-orange-200 dark:bg-blue-900 dark:text-blue-100 dark:hover:bg-orange-900 md:px-6 md:py-3 md:text-lg'
         >
           Tags
         </a>
@@ -67,7 +67,7 @@ const otherPosts = posts.slice(1, 5)
           </div>
           <a href={import.meta.env.BASE_URL + 'blog/' + newestPost.slug}>
             <h1
-              class='mt-2 text-4xl font-bold leading-tight text-blue-600 hover:text-pink-600 dark:text-blue-300 dark:hover:text-pink-300'
+              class='mt-2 text-4xl font-bold leading-tight text-blue-600 hover:text-orange-600 dark:text-blue-300 dark:hover:text-orange-300'
             >
               {newestPost.data.title}
             </h1>
@@ -80,7 +80,7 @@ const otherPosts = posts.slice(1, 5)
           </p>
           <a
             href={import.meta.env.BASE_URL + 'blog/' + newestPost.slug}
-            class='mt-2 inline-block rounded-md bg-blue-600 px-6 py-3 text-white hover:bg-pink-600 dark:bg-blue-300 dark:text-black dark:hover:bg-pink-300'
+            class='mt-2 inline-block rounded-md bg-blue-600 px-6 py-3 text-white hover:bg-orange-600 dark:bg-blue-300 dark:text-black dark:hover:bg-orange-300'
           >
             Read more
             <span class='sr-only'>{newestPost.data.title}</span>
