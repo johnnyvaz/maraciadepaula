@@ -12,22 +12,22 @@ export const SiteMetadata = {
   title: 'Márcia de Paiva',
   description: 'Maximize Seu Capital: Encontre as Melhores Estratégias Financeiras',
   author: {
-    name: 'Chris Tham',
-    twitter: '@chris1tham',
-    url: 'https://christham.net',
-    email: 'chris@christham.net',
-    summary: 'Outrageous actualiser.'
+    name: 'Johnny Vaz',
+    twitter: '@johnnyvaz1',
+    url: 'https://johnnyvaz.com.br',
+    email: 'johnnyvaz@johnnyvaz.com.br',
+    summary: ''
   },
   org: {
-    name: 'Hello Tham',
-    twitter: '@hellothamcom',
-    url: 'https://hellotham.com',
-    email: 'info@hellotham.com',
+    name: 'Marcia Xavier de Paiva',
+    twitter: '',
+    url: 'https://marciadepaiva.com.br',
+    email: 'contato@marciadepaiva.com.br',
     summary:
-      'Hello Tham is a boutique management consulting firm. We specialise in Business and IT strategies, operating models, strategic roadmaps, enterprise architecture, analytics and business process design.'
+      'Maximize seu potencial financeiro com nossos serviços personalizados. Oferecemos crédito com garantia, antecipação de recebíveis e consultoria especializada para transformar seus sonhos de negócio em realidade sustentável.'
   },
-  location: 'Rivendell, Middle Earth',
-  latlng: [-33.86785, 151.20732] as [number, number],
+  location: 'Grajaú, Rio de Janeiro - RJ',
+  latlng: [-22.9184905, -43.265665] as [number, number],
   repository: 'https://github.com/hellotham/hello-astro',
   buildTime: new Date()
 }
